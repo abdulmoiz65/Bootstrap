@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        h1{
+            background-color: aqua;
+        }
+
+
+
+        .b1{
+            background-color: brown;
+        }
+        .b2{
+            background-color:blue;
+        }
+        .b3{
+            background-color:chartreuse;
+        }
+        .b4{
+            background-color:cadetblue;
+        }
+
+.col{
+    min-height: 250px;
+}       
+</style>
+<link rel="stylesheet" href="./bootstrap-5.0.2-dist/css/bootstrap.css">
+<!-- jb bhi bootstrap ki file link karate hain to hamesha 
+    bootstrap ki file ko sab se oper rakhna us ke bad apni custom css  -->
+</head>
+<body>
+
+    <nav
+        class="navbar navbar-expand-sm navbar-dark bg-dark"
+    >
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button
+                class="navbar-toggler d-lg-none"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavId"
+                aria-controls="collapsibleNavId"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./offline.html" aria-current="page">Home
+                            <span class="visually-hidden">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./footer/Home.html">Footer</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./model_opening.html">ModalOfBootstrap</a>
+                        
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./boot.html">Sample page</a>
+
+                    </li>
+                   
+                </ul>
+                <form class="d-flex my-2 my-lg-0">
+                    <input
+                        class="form-control me-sm-2"
+                        type="text"
+                        placeholder="Search"
+                    />
+                    <button
+                        class="btn btn-outline-success my-2 my-sm-0"
+                        type="submit"
+                    >
+                        Search
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- container/container-fluid -->
+    <font size="50px">container and container-fluid</font>
+<br>
+    <a href="#" class="btn btn-primary">button</a>   
+    <h1 class="container-fluid">moiz</h1>
+    <h1 class="container">moiz</h1>
+
+
+    <!-- grid -->
+    <font size="50px">Grid</font>
+
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+        </div>
+    </div>
+
+    <!-- offset(spacing) -->
+
+    <!-- in this div i want it to show on left in large screen and it shows center on medium and small screen
+    for seeing this div left on large screen i am doing offset-lg-0 because when do do offset-md-* it also applies on greater than md screen -->
+    <font size="50px">Offset (spacing)</font>
+    <div class="container">
+    <div class="row mb-5"style="border:1px solid">
+        <div class="col col-lg-4 offset-lg-0          col-md-6 offset-md-3    col-sm-6 offset-sm-3 "
+         style="background-color: red;"></div>
+    </div>
+</div>
+
+
+<!-- ordering -->
+<font size="50px">ordering</font>
+ <div class="container">
+        <div class="row mb-5">
+            <div class="col col-lg-3 b1"style="background-color:green">box 1</div>
+            <div class="col col-lg-3 b2 order-last"style="background-color:red">box 2</div>
+            <div class="col col-lg-3 b3"style="background-color:orange">box 3</div>
+            <div class="col col-lg-3 b4 order-first"style="background-color:skyblue">box 4</div>
+            
+        </div>
+    </div>
+
+    <font size="50px">order change</font>
+ <div class="container">
+        <div class="row mb-5">
+            <div class="col col-lg-3 b1 order-3"style="background-color:green">box 1</div>
+            <div class="col col-lg-3 b2 order-4"style="background-color:red">box 2</div>
+            <div class="col col-lg-3 b3 order-2"style="background-color:orange">box 3</div>
+            <div class="col col-lg-3 b4 order-1"style="background-color:skyblue">box 4</div>
+            
+        </div>
+    </div>
+
+    <font size="50px">order change in bp</font>
+
+ <div class="container">
+        <div class="row mb-5">
+            <div class="col col-lg-3 col-md-6 col-sm-6 b1 order-md-4 order-lg-0"style="background-color:green">box 1</div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 b2 order-md-3 order-lg-0"style="background-color:red">box 2</div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 b3 order-md-2 order-lg-0"style="background-color:orange">box 3</div>
+            <div class="col col-lg-3 col-md-6 col-sm-6 b4 order-md-1 order-lg-0"style="background-color:skyblue">box 4</div>
+            
+        </div>
+    </div>
+
+
+    <!-- nesting -->
+    <font size="50px">Nesting</font>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col col-lg-6 b1">box 1
+                <div class="row">
+                    <div class="col-lg-6 b3"style="background-color:black">box1</div>
+                    <div class="col-lg-6 b4"style="background-color:brown">box2</div>
+                </div>
+            </div>
+            <div class="col col-lg-6 b2">box 2</div>
+            
+        </div>
+    </div>
+    
+
+    <!-- margins -->
+    <font size="50px">Margin</font>
+                <!-- m-auto "it includes top,bottom,left,right" -->
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-4 m-auto"style="background-color:black"></div>
+        </div>
+    </div>
+
+                    <!-- mx-auto "it includes only x axis means left and right" -->
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col col-lg-4 mx-auto"style="background-color:yellow"></div>
+        </div>
+    </div>
+
+    <!-- margin breakpoints -->
+    <div class="container">
+        <div class="row m-5">
+            <div class="col col-lg-4 m-md-auto m-lg-0"style="background-color:yellow"></div>
+        </div>
+    </div>
+
+    <!-- padding -->
+    <font size="50px">padding</font>
+
+    <div class="container" >
+        <div class="row mb-5">
+            <div class="col col-lg-3 b1 pt-5">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+        </div>
+    </div>
+
+
+    <div class="container" style="border:8px solid">
+        <div class="row" style="border:5px solid red">
+            <div class="col col-md-6 p-5" style="background-color:yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, dicta!</div>
+            <div class="col col-md-6 p-md-5 p-sm-5 p-lg-0"style="background-color:pink">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum sunt quos molestiae itaque dolore cupiditate nisi dolor similique. Quidem cumque voluptates dolorem. Saepe blanditiis a beatae sit cupiditate optio obcaecati?</div>
+        </div>
+    </div>
+<br>
+
+    <!-- Justify-content/Horizontak alighment -->
+
+    
+    <!-- no class of justify-content it means it justify-content-start -->
+    <font size="50px">Justify content</font>
+
+    <center><h1>Start</h1></center>
+    <div class="container-fluid" style="border:8px solid">
+        <div class="row">
+            <div class="col col-md-3 b1 ">box 1</div>
+            <div class="col col-md-3 b2">box 2</div>
+            <div class="col col-md-3 b3">box 3</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>End</h1></center>
+    <div class="container-fluid"style="border:8px solid" >
+        <div class="row justify-content-end">
+            <div class="col col-md-3 b1 ">box 1</div>
+            <div class="col col-md-3 b2">box 2</div>
+            <div class="col col-md-3 b3">box 3</div>
+            
+        </div>
+    </div>
+
+<br>
+
+    <center><h1>Center</h1></center>
+    <div class="container-fluid" style="border:8px solid">
+        <div class="row justify-content-center">
+            <div class="col col-md-3 b1 ">box 1</div>
+            <div class="col col-md-3 b2">box 2</div>
+            <div class="col col-md-3 b3">box 3</div>
+            
+        </div>
+    </div>
+
+    <br>
+
+    <center><h1>Between</h1></center>
+    <div class="container-fluid" style="border:8px solid">
+        <div class="row justify-content-between">
+            <div class="col col-md-3 b1 ">box 1</div>
+            <div class="col col-md-3 b2">box 2</div>
+            <div class="col col-md-3 b3">box 3</div>
+            
+        </div>
+    </div>
+
+    <br>
+
+    <center><h1>Evenly</h1></center>
+    <div class="container-fluid" style="border:8px solid">
+        <div class="row justify-content-evenly">
+            <div class="col col-md-3 b1 ">box 1</div>
+            <div class="col col-md-3 b2">box 2</div>
+            <div class="col col-md-3 b3">box 3</div>
+            
+        </div>
+    </div>
+
+    <br>
+
+    <center><h1>Around</h1></center>
+    <div class="container-fluid" style="border:8px solid">
+        <div class="row justify-content-around">
+            <div class="col col-md-3 b1 ">box 1</div>
+            <div class="col col-md-3 b2">box 2</div>
+            <div class="col col-md-3 b3">box 3</div>
+            
+        </div>
+    </div>
+
+<br>
+    <!-- it cannot show less than lg screen -->
+    <div class="container-fluid" style="border:8px solid">
+        <div class="row justify-content-lg-center ">
+            <div class="col col-md-3 b1 ">box 1</div>
+            <div class="col col-md-3 b2">box 2</div>
+            <div class="col col-md-3 b3">box 3</div>
+            
+        </div>
+    </div>
+
+    <br>
+
+
+
+    <!-- Align items / Vertical alignment -->
+    <!-- it shows on inspect -->
+
+<font size="50px">Align items</font>
+    <center><h1>stretch</h1></center>
+    <div class="container-fluid" style="border:8px solid">
+        <div class="row">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro aperiam fuga deserunt odio sapiente vero tempora dignissimos provident, iusto dolore.</div>
+            <div style="color: white;" class="col col-md-3 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetur, ipsum impedit et exercitationem iure consequatur blanditiis ipsam fuga!</div>
+        </div>
+    </div>
+    <br>
+ 
+    <center><h1>start</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-items-sm-start">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-3 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>end</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-items-sm-end">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-3 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>center</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-items-sm-center">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-3 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>baseline</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-items-sm-baseline">
+            <div class="col col-md-3 mt-5 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-3 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- align-content -->
+    <font size="50px">Align content</font>
+
+    <center><h1>simple grid</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+    <!-- now i am assigning a height to the row and my content in also stretch according to the height of the row -->
+    <center><h1>stretch or default according to row height</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row" style="height: 750px;border: solid 5px hotpink;">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>start</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-content-start" style="height: 700px;border: solid 5px hotpink;">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+
+    <center><h1>end</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-content-end" style="height: 700px;border: solid 5px hotpink;">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+
+    <center><h1>center</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-content-center" style="height: 700px;border: solid 5px hotpink;">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>between</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-content-between" style="height: 700px;border: solid 5px hotpink;">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+
+    <center><h1>Around</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-content-around" style="height: 700px;border: solid 5px hotpink;">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+
+    <center><h1>break points on diff screen"align content" </h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row align-content-lg-center align-content-md-between" style="height: 700px;border: solid 5px hotpink;">
+            <div class="col col-md-3 b1 ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-3 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-4 b4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-6 b2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            <div class="col col-md-2 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+        </div>
+    </div>
+    <br>
+
+
+    <!-- align self -->
+    <font size="50px">Align self</font>
+
+    <center><h1>simple grid</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row">
+            <div class="col col-md-4 b1 ">Lorem Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores dolorem natus nulla voluptatum necessitatibus enim, sint alias deleniti, officiis facere nobis et, magnam laboriosam? Iusto nisi voluptas impedit quod.consectetur adipisicing elit. A animi sunt excepturi dolorem quaerat omnis? ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-4 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-4 b3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+
+        </div>
+    </div>
+    <br>
+
+    <center><h1>start</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row">
+            <div class="col col-md-4 b1 ">Lorem Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores dolorem natus nulla voluptatum necessitatibus enim, sint alias deleniti, officiis facere nobis et, magnam laboriosam? Iusto nisi voluptas impedit quod.consectetur adipisicing elit. A animi sunt excepturi dolorem quaerat omnis? ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-4 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-4 b3 align-self-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            
+        </div>
+    </div>
+    <br>
+
+
+    <center><h1>end</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row">
+            <div class="col col-md-4 b1 ">Lorem Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores dolorem natus nulla voluptatum necessitatibus enim, sint alias deleniti, officiis facere nobis et, magnam laboriosam? Iusto nisi voluptas impedit quod.consectetur adipisicing elit. A animi sunt excepturi dolorem quaerat omnis? ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-4 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-4 b3 align-self-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            
+        </div>
+    </div>
+    <br>
+
+
+    <center><h1>center</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row">
+            <div class="col col-md-4 b1 ">Lorem Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores dolorem natus nulla voluptatum necessitatibus enim, sint alias deleniti, officiis facere nobis et, magnam laboriosam? Iusto nisi voluptas impedit quod.consectetur adipisicing elit. A animi sunt excepturi dolorem quaerat omnis? ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-4 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-4 b3 align-self-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            
+        </div>
+    </div>
+    <br>
+
+
+    <center><h1>baseline</h1></center>
+    <div class="container-fluid " style="border:8px solid">
+        <div class="row mt-5">
+            <div class="col col-md-4 b1 ">Lorem Lorem, ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maiores dolorem natus nulla voluptatum necessitatibus enim, sint alias deleniti, officiis facere nobis et, magnam laboriosam? Iusto nisi voluptas impedit quod.consectetur adipisicing elit. A animi sunt excepturi dolorem quaerat omnis? ipsum dolor sit amet consectetur, adipisicing elit. Temporibus veritatis facilis in odit exercitationem eligendi, laboriosam fugit dicta porro </div>
+            <div style="color: white;" class="col col-md-4 b2">Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quae voluptate nihil fugiat. Autem, fugit. adipisicing elit. Et suscipit quibusdam, fugiat recusandae provident impedit, molestias ullam saepe cupiditate sunt rerum sequi consequatur placeat iure omnis quo repellendus eligendi corrupti!</div>
+            <div class="col col-md-4 b3 align-self-baseline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sit esse accusamus numquam tempore eligendi animi magni iste. Officiis ullam tenetu</div>
+            
+        </div>
+    </div>
+    <br>
+
+    <!-- flex directions -->
+    <font size="50px">Flex Directions</font>
+
+    <center><h1>flex by default</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>flex-row-reverse</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row flex-row-reverse">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>flex-column</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row flex-column">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+        </div>
+    </div>
+    <br>
+
+
+
+    <center><h1>flex-column-reverse</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row flex-column-reverse">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>flex-wrap and it is default</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+            <div class="col col-lg-3 b2">box 5</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>flex-wrap reverse</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row flex-wrap-reverse">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+            <div class="col col-lg-3 b2">box 5</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>flex-nowrap</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row flex-nowrap">
+            <div class="col col-lg-3 b1">box 1</div>
+            <div class="col col-lg-3 b2">box 2</div>
+            <div class="col col-lg-3 b3">box 3</div>
+            <div class="col col-lg-3 b4">box 4</div>
+            <div class="col col-lg-3 b2">box 5</div>
+        </div>
+    </div>
+    <br>
+
+    <center><h1>flex-fill apply on a</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row">
+            <div class="col b1 flex-fill">box 1</div>
+            <div class="col b2">box 2</div>
+            <div class="col b3">box 3</div>
+            <div class="col b4">box 4</div>
+            
+        </div>
+    </div>
+    <br>
+
+    <center><h1>flex-fill apply on b</h1></center>
+    <div class="container" style="border: 5px solid;">
+        <div class="row">
+            <div class="col b1 ">box 1</div>
+            <div class="col b2 flex-fill">box 2</div>
+            <div class="col b3">box 3</div>
+            <div class="col b4">box 4</div>
+            
+        </div>
+    </div>
+    <br>
+
+
+
+
+
+<!-- bootstrap script link -->
+<script src="./bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+</body>
+</html>
